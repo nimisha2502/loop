@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,max_div,c,i;
+    printf("\n enter first +ve no.: ");      
+    scanf("%d",&a);
+    printf("\n enter second +ve no.: ");
+    scanf("%d",&b);
+    c=a*b;
+    max_div = (a > b) ? a : b; 
+    for(i=max_div;i<=c;i++)
+    {
+        if(max_div%a==0&&max_div%b==0)
+        {
+            printf("the lcm of %d and %d is %d",a,b,max_div);
+            break;
+        }
+        max_div++;
+    }
+    return 0;
+}
