@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,i,rem;
+    printf("\n enter the no.: ");      
+    scanf("%d",&num);
+    printf("\n input no.:%d",num);
+    rem=num/2;
+    for(i=2;i<=rem;i++)
+    {
+       if(num%i==0)
+       {
+           printf("\n the number is not prime");
+           break;
+       }
+       else 
+       {
+           printf("\n the number is prime");
+           break;
+       }
+    }
+    if(num==0 || num==1)
+    {
+        printf("the number is neither prime nor composite number");
+    }
+    if(num==2 || num==3)
+    {
+        printf("\n the number is prime");
+    }
+    return 0;
+}
